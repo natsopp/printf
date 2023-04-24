@@ -48,4 +48,4 @@ typedef struct _format
 	int (*f)(va_list);
 } format;
 
-#endif/* MAIN_H*/
+#endif
