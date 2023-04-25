@@ -14,12 +14,14 @@
          _putchar(*str++);
     return (str - a);
  }
+
  /**
   * _putchar - writes the chareacter c to stdout
   *
   * Retuen: on success 1.
   * On error, -1 is returned, and error is set appropriately.
   */
+
   int _putchar(int c)
   {
       static int i;

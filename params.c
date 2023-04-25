@@ -6,6 +6,7 @@
  *
  * Retturn: void
  */
+
  void init_parmas(PARAMS_t, va_list ap)
  {
      params->unsign = 0;

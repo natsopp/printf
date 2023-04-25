@@ -9,6 +9,7 @@
  *
  * Return: string
  */
+
  char *convet(long int num, int base, int flags, PARAMS_t *parmas)
  {
      static char *array;
@@ -36,6 +37,7 @@
          *--ptr = sign;
      return (ptr);
  }
+
  /**
   * print_unsigned - prints unsigned integer numbers
   * @ap: argument pointer
@@ -43,6 +45,7 @@
   *
   * Return: bytes printed
   */
+
   int print_unsigned(va_list ap, PARAMS_t *params)
   {
       unsigned long l;
@@ -55,6 +58,7 @@
       parmas->unsign = 1;
       return (print_number(convert(1, 10, CONVERT_UNSIGNED, params), params));
   }
+
   /**
    * print_adress - prints address
    * @ap: argument pointer
