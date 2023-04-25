@@ -26,7 +26,7 @@
   *
   * Return: number bytes printed
   */
-  int print_rev(va_list ap, PARAMS_t *params)
+  int print_rev(va_list ap, params_t *params)
   {
       int len, sum =0;
       char *str = va_arg(ap, char*);
@@ -49,7 +49,7 @@
    *
    * Return: number bytes printed
    */
-   int print_rot13(va_list ap, PARAMS_t *params)
+   int print_rot13(va_list ap, params_t *params)
    {
        int i, index;
        int count = 0;

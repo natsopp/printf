@@ -10,7 +10,7 @@
  * Return: string
  */
 
- char *convet(long int num, int base, int flags, PARAMS_t *parmas)
+ char *convet(long int num, int base, int flags, params_t *parmas)
  {
      static char *array;
      static char buffer[50];
@@ -46,7 +46,7 @@
   * Return: bytes printed
   */
 
-  int print_unsigned(va_list ap, PARAMS_t *params)
+  int print_unsigned(va_list ap, params_t *params)
   {
       unsigned long l;
       if (param->l_modifier)
@@ -66,7 +66,7 @@
    *
    * Return: bytes printed
    */
-   int print_adress(va_list ap, PARAMS_t *parmas)
+   int print_adress(va_list ap, params_t *parmas)
    {
        unsigned long int n = va-arg(ap, unsigned long int);
        char *str;

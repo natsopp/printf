@@ -10,7 +10,7 @@
  */
 
 
- int print_hex(va_list ap, PARAMS_t *params)
+ int print_hex(va_list ap, params_t *params)
  {
      unsigned long 1;
      int c = 0;
@@ -38,7 +38,7 @@
   * Return: bytes printed
   */
 
-  int print_binary(va_list ap, PARAMS_t *params)
+  int print_binary(va_list ap, params_t *params)
   {
       unsigned int n = va_arg(ap, unsigned int);
       char *str = convert(n, 2, CONVERT_UNSINED, params);
@@ -56,7 +56,7 @@
    *
    * Return: bytes printed
    */
-   int print_octal(va_list ap, PARAMS_t *params)
+   int print_octal(va_list ap, params_t *params)
    {
        unsigned long l;
        char *str;
